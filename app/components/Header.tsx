@@ -5,7 +5,7 @@ export function Header() {
   const { personal } = person;
 
   return (
-    <header className="py-4 px-4 md:py-12 md:px-12">
+    <header className="py-4 md:py-12">
       <div className="grid gap-4 grid-cols-2 md:grid-cols-3 max-w-7xl m-auto">
         <div className="col-span-1 md:col-span-2 flex flex-col gap-3 justify-center items-center">
           <p>

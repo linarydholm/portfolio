@@ -1,26 +1,28 @@
-'use client';
-import Link from 'next/link';
 import { menuLinks } from '../__data__/data';
-import { usePathname } from 'next/navigation';
+import { NavProps } from '../types/Nav.types';
 
-export default function Nav() {
-  const currentPath = usePathname();
-  console.log(currentPath);
+export default function Nav(props: NavProps) {
+  const { setNewSelectedLink, myClass } = props;
 
   return (
-    <nav className="py-4 px-4 md:py-6 md:px-12">
+    <nav className="py-4 md:py-6">
       <div className="max-w-7xl m-auto">
-        <div className="flex gap-3">
+        <ul className="flex gap-3">
           {menuLinks.map((headerLink, index) => {
             const link = headerLink.toLowerCase();
+
             return (
-              <Link className="p-1" key={`headerLink${index}`} href={link !== 'about' ? link : '/'}>
-                {/* headerLink === currentPath */}
+              <button
+                className={myClass}
+                key={`${link}${index}`}
+                name={link}
+                onClick={() => setNewSelectedLink(link)}
+              >
                 {headerLink}
-              </Link>
+              </button>
             );
           })}
-        </div>
+        </ul>
       </div>
     </nav>
   );

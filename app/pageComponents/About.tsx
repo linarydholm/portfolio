@@ -1,8 +1,11 @@
+import { person } from '../__data__/person';
+
 export default function About() {
+  const { personalDescription } = person.personal;
   return (
-    <main>
-      <p>Description about me</p>
-      <p>Description about this page - how the page is built</p>
-    </main>
+    <section>
+      <p>Hi!</p>
+      <p>{personalDescription}</p>
+    </section>
   );
 }

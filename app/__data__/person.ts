@@ -4,7 +4,9 @@ export const person = {
     lastName: 'Rydholm',
     jobTitle: 'Frontend Developer',
     personalDescription:
-      'Jag är en kreativ tjej med god beslutsförmåga samt spridda kunskaper i ryggsäcken. Som frontendutvecklare finner jag min drivkraft i min personliga utveckling där jag snabbt lär mig allt jag tar mig an.',
+      "I'm Lina - a creative girl who carries great decision making and broad knowledge in my backpack. As a frontend developer I find motivation in my personal development as I love to learn and gain new experiences.",
+    pageDescription:
+      'This page is built with Next.js (app router), Tailwind CSS and Typescript with accessibility features in mind.',
     contact: {
       email: 'lina.rydholm@gmail.com',
       phone: '070-955 80 00',
