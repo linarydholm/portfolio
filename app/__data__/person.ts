@@ -3,10 +3,11 @@ export const person = {
     firstName: 'Lina',
     lastName: 'Rydholm',
     jobTitle: 'Frontend Developer',
-    personalDescription:
-      "I'm Lina - a creative girl who carries great decision making and broad knowledge in my backpack. As a frontend developer I find motivation in my personal development as I love to learn and gain new experiences.",
-    pageDescription:
+    aboutMe:
+      "I'm Lina - a creative girl with excellent decision making and broad knowledge in my backpack. As a frontend developer I find motivation in my personal development as I love to learn and gain new experiences.",
+    aboutThisPage:
       'This page is built with Next.js (app router), Tailwind CSS and Typescript with accessibility features in mind.',
+    hello: 'Hey!',
     contact: {
       email: 'lina.rydholm@gmail.com',
       phone: '070-955 80 00',
@@ -58,21 +59,22 @@ export const person = {
     { school: 'Nackademin', period: '2022-2024', education: 'Frontendutveckling' },
   ],
   skills: {
-    programming: ['HTML', 'CSS', 'JavaScript'],
-    frameworks: ['React', 'Next.js', 'Tailwind CSS'],
-    other: [
-      'TypeScript',
+    'Personal Qualities': ['Diversified', 'Great with numbers', 'Team player'],
+    'Web Development': ['HTML', 'CSS', 'JavaScript', 'TypeScript'],
+    Frameworks: ['React', 'Next.js', 'Tailwind CSS'],
+    CMS: ['Strapi', 'Shopify', 'Sanity'],
+    'Design Tools': ['Figma', 'Canva'],
+    'other technologies': [
       'Sass',
       'Node',
-      'Figma',
-      'Canva',
-      'CMS',
-      'Redux',
-      'Turborepo',
       'MongoDB',
       'Express.js',
-      'Diverse bokföringssystem',
+      'Turborepo',
+      'Redux',
+      'Git',
+      'Github',
+      'A11y',
     ],
-    languages: ['Svenska', 'Engelska'],
+    languages: ['Swedish', 'English'],
   },
 };
