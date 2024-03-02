@@ -29,21 +29,20 @@ export default function Nav() {
         <div className="max-w-7xl m-auto">
           <ul className="flex gap-6">
             {menuLinks.map((headerLink) => {
-              // let myClass = 'border-transparent';
-
-              // if (activeLink === headerLink) {
-              //   myClass = 'border-primary';
-              // }
-
               return (
-                <button
-                  className="relative py-[6px] text-s overflow-hidden"
-                  key={`headerLink${headerLink}`}
-                  onClick={() => setActiveLink(headerLink)}
-                >
-                  {headerLink}
-                  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary animate-leftToRight" />
-                </button>
+                <div className="relative group overflow-hidden" key={headerLink}>
+                  <button
+                    className={`flex flex-col py-[6px] text-s ${
+                      activeLink === headerLink ? true : false
+                    }`}
+                    key={`headerLink${headerLink}`}
+                    onClick={() => setActiveLink(headerLink)}
+                  >
+                    {headerLink}
+                    {/* <span className="absolute bottom-0 h-0.5 w-7/12 bg-primary hover:animate-leftToRight" /> */}
+                  </button>
+                  <span className="absolute bottom-0 h-0.5 w-full bg-primary group-hover:animate-test group-active:animate-test" />
+                </div>
               );
             })}
           </ul>

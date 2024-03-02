@@ -51,17 +51,21 @@ const config: Config = {
     },
     extend: {
       keyframes: {
-        leftToRight: {
+        // bounce: {
+        //   '0%, 100%': { transform: 'scale(1, 1)' },
+        //   '50%': { transform: 'scale(0.5)' },
+        // },
+        // opacity: {
+        //   '0%': { opacity: '0' },
+        //   '100%': { opacity: '100' },
+        // },
+        test: {
           '0%': { transform: 'translateX(-100%)' },
           '100%': { transform: 'translateX(-30%)' },
         },
-        opacity: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '100' },
-        },
       },
       animation: {
-        leftToRight: 'leftToRight 0.6s linear',
+        test: 'test 1s ease-in-out',
       },
       colors: {
         dark: 'var(--color-dark)',
