@@ -25,7 +25,7 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="px-6">
+      <nav className="px-6 overflow-y-auto">
         <div className="max-w-7xl m-auto">
           <ul className="flex gap-6">
             {menuLinks.map((headerLink) => {

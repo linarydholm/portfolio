@@ -6,14 +6,14 @@ export default function Education() {
   return (
     <section className="px-6 pt-6">
       <div className="max-w-7xl m-auto">
-        {education.map((school) => {
+        {education.map((school, index) => {
           return (
-            <>
+            <div key={index}>
               <p className="text-xxs pb-1">
                 {school.school}, {school.period}
               </p>
               <p className="text-xs pb-6">{school.program}</p>
-            </>
+            </div>
           );
         })}
       </div>

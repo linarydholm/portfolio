@@ -6,14 +6,14 @@ export default function Experience() {
   return (
     <section className="px-6 pt-6">
       <div className="max-w-7xl m-auto">
-        {experience.map((job) => {
+        {experience.map((job, index) => {
           return (
-            <>
+            <div key={index}>
               <p className="text-xxs pb-1">
                 {job.jobTitle}, {job.period}
               </p>
               <p className="text-xs pb-6">{job.jobDescription}</p>
-            </>
+            </div>
           );
         })}
       </div>

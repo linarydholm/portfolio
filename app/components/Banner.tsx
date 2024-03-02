@@ -1,22 +1,29 @@
 import { GitHubIcon } from '@/public/svg/GitHubIcon';
 import { FillLinkedinIcon } from '@/public/svg/FillLinkedinIcon';
+import Link from 'next/link';
+import { BannerLink } from './BannerLink';
 
 export function Banner() {
   return (
     <section className="px-6 py-6">
       <div className="flex gap-4 justify-between items-center max-w-7xl m-auto">
-        <p>Work</p>
+        {/* make next row a component (work / back to homepage) */}
+        <BannerLink />
         <div className="mx-auto"></div>
-        <GitHubIcon
-          className="w-8 h-8 text-white fill-purple-500"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 496 512"
-        />
-        <FillLinkedinIcon
-          className="w-8 h-8 text-white fill-purple-500"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 448 512"
-        />
+        <Link href="https://github.com/linarydholm" target="_blank">
+          <GitHubIcon
+            className="w-8 h-8 text-white fill-purple-500"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 496 512"
+          />
+        </Link>
+        <Link href="https://www.linkedin.com/in/lina-rydholm-6169b823b/" target="_blank">
+          <FillLinkedinIcon
+            className="w-8 h-8 text-white fill-purple-500"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          />
+        </Link>
       </div>
     </section>
   );
