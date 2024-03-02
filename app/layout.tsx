@@ -12,14 +12,12 @@ export const metadata: Metadata = {
   description: 'Frontend developer in Stockholm',
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const myClass = `bg-dark text-light ${inter.className} overflow-y-scroll`;
+
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={myClass}>
         <Banner />
         <Header />
         {children}

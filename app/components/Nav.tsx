@@ -1,5 +1,5 @@
 'use client';
-import { menuLinks } from '../__data__/data';
+import { menuLinks } from '../data/data';
 import { useState } from 'react';
 import Skills from './Skills';
 import Education from './Education';
@@ -29,19 +29,20 @@ export default function Nav() {
         <div className="max-w-7xl m-auto">
           <ul className="flex gap-6">
             {menuLinks.map((headerLink) => {
-              let myClass = 'border-transparent';
+              // let myClass = 'border-transparent';
 
-              if (activeLink === headerLink) {
-                myClass = 'border-purple-500';
-              }
+              // if (activeLink === headerLink) {
+              //   myClass = 'border-primary';
+              // }
 
               return (
                 <button
-                  className={`py-1 border-b-2 text-s ${myClass}`}
+                  className="relative py-[6px] text-s overflow-hidden"
                   key={`headerLink${headerLink}`}
                   onClick={() => setActiveLink(headerLink)}
                 >
                   {headerLink}
+                  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary animate-leftToRight" />
                 </button>
               );
             })}

@@ -1,4 +1,4 @@
-import { person } from '../__data__/person';
+import { person } from '../data/person';
 import { capitalizeFirstLetter } from '../utils/capitalizeFirstLetter';
 
 export default function Skills() {

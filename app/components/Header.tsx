@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { person } from '../__data__/person';
+import { person } from '../data/person';
 
 export function Header() {
   const { personal } = person;
@@ -18,9 +18,9 @@ export function Header() {
           </p>
         </div>
         <div></div>
-        <div className="w-1/2 flex justify-center items-center aspect-square bg-yellow-100 overflow-hidden border-0 rounded-full">
+        <div className="w-1/2 flex justify-center items-center aspect-square overflow-hidden border-0 rounded-full">
           <Image
-            src="/img/aiony-haust-3TLl_97HNJo-unsplash.jpg"
+            src="/aiony-haust-3TLl_97HNJo-unsplash.jpg"
             width={640}
             height={640}
             alt="Picture of the author"

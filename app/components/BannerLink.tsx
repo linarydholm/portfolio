@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
 export function BannerLink() {
-  const [bannerLink, setBannerLink] = useState('');
+  const [bannerLink, setBannerLink] = useState('Work');
   const [otherPath, setOtherPath] = useState('');
   const pathname = usePathname().toLowerCase();
 
@@ -15,7 +15,7 @@ export function BannerLink() {
 
   return (
     <Link
-      className="text-xxs h-8 w-20 flex items-center justify-center bg-purple-500 rounded"
+      className="text-xxs h-8 w-20 flex items-center justify-center bg-primary rounded"
       href={otherPath}
     >
       {bannerLink}

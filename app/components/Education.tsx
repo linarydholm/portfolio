@@ -1,4 +1,4 @@
-import { person } from '../__data__/person';
+import { person } from '../data/person';
 
 export default function Education() {
   const { education } = person;

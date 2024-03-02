@@ -1,5 +1,5 @@
 import { SvgComp } from '@/app/components/SvgComp';
-import { SvgCompProps } from '@/app/types/SvgComp.types';
+import { SvgCompProps } from '@/app/components/types/SvgComp.types';
 
 export function FillGitHubIcon(props: SvgCompProps) {
   return (

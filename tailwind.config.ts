@@ -50,12 +50,33 @@ const config: Config = {
       ],
     },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      keyframes: {
+        leftToRight: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(-30%)' },
+        },
+        opacity: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '100' },
+        },
       },
+      animation: {
+        leftToRight: 'leftToRight 0.6s linear',
+      },
+      colors: {
+        dark: 'var(--color-dark)',
+        light: 'var(--color-light)',
+        primary: 'var(--color-primary)',
+        secondary: 'var(--color-secondary)',
+      },
+      // example from tailwind:
+      // backgroundImage: {
+      //   'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      //   'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      // },
     },
+    plugins: [],
   },
-  plugins: [],
 };
+
 export default config;

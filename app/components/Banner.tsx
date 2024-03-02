@@ -1,5 +1,5 @@
-import { GitHubIcon } from '@/public/svg/GitHubIcon';
-import { FillLinkedinIcon } from '@/public/svg/FillLinkedinIcon';
+import { GitHubIcon } from './svg/GitHubIcon';
+import { FillLinkedinIcon } from './svg/FillLinkedinIcon';
 import Link from 'next/link';
 import { BannerLink } from './BannerLink';
 
@@ -12,14 +12,14 @@ export function Banner() {
         <div className="mx-auto"></div>
         <Link href="https://github.com/linarydholm" target="_blank">
           <GitHubIcon
-            className="w-8 h-8 text-white fill-purple-500"
+            className="w-8 h-8 text-white fill-primary"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 496 512"
           />
         </Link>
         <Link href="https://www.linkedin.com/in/lina-rydholm-6169b823b/" target="_blank">
           <FillLinkedinIcon
-            className="w-8 h-8 text-white fill-purple-500"
+            className="w-8 h-8 text-white fill-primary"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
           />
