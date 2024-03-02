@@ -1,8 +1,21 @@
+import { person } from '../__data__/person';
+
 export default function Experience() {
+  const { experience } = person;
+
   return (
     <section className="px-6 pt-6">
       <div className="max-w-7xl m-auto">
-        <h1>Experience Component</h1>
+        {experience.map((job) => {
+          return (
+            <>
+              <p className="text-xxs pb-1">
+                {job.jobTitle}, {job.period}
+              </p>
+              <p className="text-xs pb-6">{job.jobDescription}</p>
+            </>
+          );
+        })}
       </div>
     </section>
   );

@@ -5,7 +5,7 @@ export default function Skills() {
   const { skills } = person;
 
   const joinArrWithComma = (categoryArr: string[]): string => {
-    return categoryArr.join(', ');
+    return categoryArr.join(' \u2022 ');
   };
 
   return (
@@ -13,7 +13,7 @@ export default function Skills() {
       <div className="max-w-7xl m-auto">
         {Object.entries(skills).map(([keyName, categoryArr]) => {
           return (
-            <div className="pb-4" key={keyName}>
+            <div className="pb-6" key={keyName}>
               <p className="text-xxs pb-1">{capitalizeFirstLetter(keyName)}</p>
               <p className="text-xs">{joinArrWithComma(categoryArr)}</p>
             </div>

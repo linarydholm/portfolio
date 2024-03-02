@@ -22,41 +22,45 @@ export const person = {
   },
   experience: [
     {
-      jobTitle: 'Skiftledare',
-      period: '2014-2019',
-      jobDescription: 'Skiftledare på Max burgers med dagsansvar.',
+      jobTitle: 'Logistics',
+      period: '2022-2023',
+      jobDescription: "Order pick and pack at Skincity's main warehouse.",
     },
     {
-      jobTitle: 'Banksäljare',
-      period: '2019',
-      jobDescription: 'Bankman och säljare av valuta samt banktjänster på Forex Bank.',
-    },
-    {
-      jobTitle: 'Ekonomiassistent',
-      period: '2019-2020',
-      jobDescription:
-        'Ekonomiassistent på Perido. Bokföring och administration inom leverantörsreskontra för konsulter, underkonsulter samt egenanställda.',
-    },
-    {
-      jobTitle: 'Ekonomiassistent',
+      jobTitle: 'Financial Assistant',
       period: '2020-2022',
       jobDescription:
-        'Ekonomiassistent på Spares Nordic med ett övergripande ansvar för kundreskontran samt delaktighet i månadsbokslut.',
+        'Financial assistant at Spares Nordic with overall responsibility for customer accounts and participation in monthly accounts.',
     },
     {
-      jobTitle: 'Logistik',
-      period: '2022-2023',
-      jobDescription: 'Orderplock och pack på Skincitys huvudlager.',
+      jobTitle: 'Financial Assistant',
+      period: '2019-2020',
+      jobDescription:
+        'Finance assistant at Perido. Bookkeeping and administration within accounts payable for consultants, sub-consultants and the self-employed.',
+    },
+    {
+      jobTitle: 'Bank Teller',
+      period: '2019',
+      jobDescription: 'Bank teller and seller of currency and banking services at Forex Bank.',
+    },
+    {
+      jobTitle: 'Shift Manager',
+      period: '2014-2019',
+      jobDescription: 'Shift manager at Max burgers with shift responsibility.',
     },
   ],
   education: [
-    { school: 'Jensen Gymnasium', period: '2013-2016', education: 'Diplomerad gymnasieekonom' },
+    { school: 'Nackademin', period: '2022-2024', program: 'Frontend Development' },
     {
       school: 'Stockholms Universitet',
       period: '2020',
-      education: 'Redovisning 1 | Finansiering 1',
+      program: 'Accounting 1 \u2022 Financing 1',
     },
-    { school: 'Nackademin', period: '2022-2024', education: 'Frontendutveckling' },
+    {
+      school: 'Jensen Gymnasium',
+      period: '2013-2016',
+      program: 'High School Economist with Diploma',
+    },
   ],
   skills: {
     'Personal Qualities': ['Diversified', 'Great with numbers', 'Team player'],
@@ -64,7 +68,7 @@ export const person = {
     Frameworks: ['React', 'Next.js', 'Tailwind CSS'],
     CMS: ['Strapi', 'Shopify', 'Sanity'],
     'Design Tools': ['Figma', 'Canva'],
-    'other technologies': [
+    'Other Technologies': [
       'Sass',
       'Node',
       'MongoDB',

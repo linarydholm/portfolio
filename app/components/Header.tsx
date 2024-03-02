@@ -20,9 +20,9 @@ export function Header() {
         <div></div>
         <div className="w-1/2 flex justify-center items-center aspect-square bg-yellow-100 overflow-hidden border-0 rounded-full">
           <Image
-            src="/aiony-haust-3TLl_97HNJo-unsplash.jpg"
-            width={1200}
-            height={1200}
+            src="/img/aiony-haust-3TLl_97HNJo-unsplash.jpg"
+            width={640}
+            height={640}
             alt="Picture of the author"
           />
         </div>
