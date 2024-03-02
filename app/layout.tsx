@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  const myClass = `bg-dark text-light ${inter.className} overflow-y-scroll`;
+  const myClass = `bg-default-dark text-default-light ${inter.className} overflow-y-scroll`;
 
   return (
     <html lang="en">

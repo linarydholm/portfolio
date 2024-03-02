@@ -50,34 +50,22 @@ const config: Config = {
       ],
     },
     extend: {
-      keyframes: {
-        // bounce: {
-        //   '0%, 100%': { transform: 'scale(1, 1)' },
-        //   '50%': { transform: 'scale(0.5)' },
-        // },
-        // opacity: {
-        //   '0%': { opacity: '0' },
-        //   '100%': { opacity: '100' },
-        // },
-        test: {
-          '0%': { transform: 'translateX(-100%)' },
-          '100%': { transform: 'translateX(-30%)' },
+      colors: {
+        default: {
+          dark: 'var(--colors-default-dark)',
+          light: 'var(--colors-default-light)',
+        },
+        primary: {
+          DEFAULT: 'var(--colors-primary-default)',
+          light: 'var(--colors-primary-light)',
+          dark: 'var(--colors-primary-dark)',
+        },
+        secondary: {
+          DEFAULT: 'var(--colors-secondary-default)',
+          light: 'var(--colors-secondary-light)',
+          dark: 'var(--colors-secondary-dark)',
         },
       },
-      animation: {
-        test: 'test 1s ease-in-out',
-      },
-      colors: {
-        dark: 'var(--color-dark)',
-        light: 'var(--color-light)',
-        primary: 'var(--color-primary)',
-        secondary: 'var(--color-secondary)',
-      },
-      // example from tailwind:
-      // backgroundImage: {
-      //   'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-      //   'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      // },
     },
     plugins: [],
   },

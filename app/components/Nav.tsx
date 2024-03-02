@@ -32,16 +32,17 @@ export default function Nav() {
               return (
                 <div className="relative group overflow-hidden" key={headerLink}>
                   <button
-                    className={`flex flex-col py-[6px] text-s ${
-                      activeLink === headerLink ? true : false
-                    }`}
+                    className={`flex flex-col py-[6px] text-s`}
                     key={`headerLink${headerLink}`}
                     onClick={() => setActiveLink(headerLink)}
                   >
                     {headerLink}
-                    {/* <span className="absolute bottom-0 h-0.5 w-7/12 bg-primary hover:animate-leftToRight" /> */}
                   </button>
-                  <span className="absolute bottom-0 h-0.5 w-full bg-primary group-hover:animate-test group-active:animate-test" />
+                  <span
+                    className={`absolute bottom-0 h-0.5 w-0 bg-primary ease-in-out duration-500 group-hover:w-2/3 opacity-60 group-hover:opacity-100 ${
+                      activeLink === headerLink ? 'bg-primary h-0.5 w-2/3' : false
+                    }`}
+                  />
                 </div>
               );
             })}

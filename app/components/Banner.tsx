@@ -12,14 +12,14 @@ export function Banner() {
         <div className="mx-auto"></div>
         <Link href="https://github.com/linarydholm" target="_blank">
           <GitHubIcon
-            className="w-8 h-8 text-white fill-primary"
+            className="w-8 h-8 fill-primary-dark duration-300 ease-in-out hover:fill-primary"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 496 512"
           />
         </Link>
         <Link href="https://www.linkedin.com/in/lina-rydholm-6169b823b/" target="_blank">
           <FillLinkedinIcon
-            className="w-8 h-8 text-white fill-primary"
+            className="w-8 h-8 fill-primary-dark duration-300 ease-in-out hover:fill-primary"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
           />

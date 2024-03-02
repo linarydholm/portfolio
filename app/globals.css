@@ -4,10 +4,18 @@
 
 @layer base {
   :root {
-    --color-dark: rgba(37, 37, 37, 1);
-    --color-light: rgba(255, 255, 255, 1);
-    --color-primary: rgb(185, 110, 255);
-    --color-secondary: rgb(255, 110, 175);
+    --colors-default-dark: rgba(37, 37, 37, 1);
+    --colors-default-light: rgba(255, 255, 255, 1);
+
+    --colors-primary-default: rgba(185, 110, 255, 1);
+    /* custom 2 below */
+    --colors-primary-light: rgba(238, 219, 255, 1);
+    --colors-primary-dark: rgba(123, 74, 169, 1);
+
+    --colors-secondary-default: rgba(255, 110, 175, 1);
+    /* custom 2 below */
+    --colors-secondary-light: rgb(255, 110, 175);
+    --colors-secondary-dark: rgb(255, 110, 175);
 
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;
