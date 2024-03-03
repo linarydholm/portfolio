@@ -51,20 +51,14 @@ const config: Config = {
     },
     extend: {
       colors: {
-        default: {
-          dark: 'var(--colors-default-dark)',
-          light: 'var(--colors-default-light)',
-        },
-        primary: {
-          DEFAULT: 'var(--colors-primary-default)',
-          light: 'var(--colors-primary-light)',
-          dark: 'var(--colors-primary-dark)',
-        },
-        secondary: {
-          DEFAULT: 'var(--colors-secondary-default)',
-          light: 'var(--colors-secondary-light)',
-          dark: 'var(--colors-secondary-dark)',
-        },
+        dark: 'var(--colors-dark)',
+        'dark-bg': 'var(--colors-dark-bg)',
+        light: 'var(--colors-light)',
+        'light-bg': 'var(--colors-light-bg)',
+        primary: 'var(--colors-primary)',
+        secondary: 'var(--colors-secondary)',
+        tertiary: 'var(--colors-tertiary)',
+        quaternary: 'var(--colors-quaternary)',
       },
     },
     plugins: [],

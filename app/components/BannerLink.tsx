@@ -15,7 +15,7 @@ export function BannerLink() {
 
   return (
     <Link
-      className="text-xxs h-8 w-20 flex items-center justify-center rounded bg-primary-dark hover:bg-primary duration-300 ease-in-out"
+      className="text-xxs h-8 w-20 flex items-center justify-center rounded bg-primary hover:bg-secondary duration-300 ease-in-out"
       href={otherPath}
     >
       {bannerLink}

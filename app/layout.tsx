@@ -4,6 +4,7 @@ import './globals.css';
 import { Header } from './components/Header';
 import { Banner } from './components/Banner';
 import { Footer } from './components/Footer';
+import About from './components/About';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -13,13 +14,21 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  const myClass = `bg-default-dark text-default-light ${inter.className} overflow-y-scroll`;
+  const myClass = `bg-light text-dark ${inter.className} overflow-y-scroll`;
 
   return (
     <html lang="en">
       <body className={myClass}>
-        <Banner />
-        <Header />
+        {/* 
+        text-dark: sets text color on Banner, Header and About
+
+        gradient are controlled by: bg-dark, bg-gradient-to-b, from transparent, to-light 
+        */}
+        <div className="text-dark bg-dark-bg bg-gradient-to-b from-transparent to-light">
+          <Banner />
+          <Header />
+          <About />
+        </div>
         {children}
         <Footer />
       </body>
