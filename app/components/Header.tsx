@@ -18,7 +18,7 @@ export function Header() {
           </p>
         </div>
         <div></div>
-        <div className="w-1/2 flex justify-center items-center aspect-square overflow-hidden border-0 rounded-full">
+        <div className="w-1/2 flex justify-center items-center aspect-square overflow-hidden border-2 border-tertiary-20 rounded-full">
           <Image
             src="/aiony-haust-3TLl_97HNJo-unsplash.jpg"
             width={640}

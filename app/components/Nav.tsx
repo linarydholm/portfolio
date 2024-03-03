@@ -39,7 +39,7 @@ export default function Nav() {
                     {headerLink}
                   </button>
                   <span
-                    className={`absolute bottom-0 h-0.5 w-0 bg-primary ease-in-out duration-500 group-hover:w-2/3 opacity-60 group-hover:opacity-100 ${
+                    className={`absolute bottom-0 h-0.5 w-0 bg-tertiary-60 ease-in-out duration-500 group-hover:w-2/3 group-hover:bg-tertiary ${
                       activeLink === headerLink ? 'bg-primary h-0.5 w-2/3' : false
                     }`}
                   />

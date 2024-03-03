@@ -1,5 +1,7 @@
 import type { Config } from 'tailwindcss';
 
+// bg-dark-bg bg-gradient-to-b hover:bg-gradient-to-tl from-primary to-transparent
+
 const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -51,14 +53,19 @@ const config: Config = {
     },
     extend: {
       colors: {
-        dark: 'var(--colors-dark)',
-        'dark-bg': 'var(--colors-dark-bg)',
-        light: 'var(--colors-light)',
-        'light-bg': 'var(--colors-light-bg)',
-        primary: 'var(--colors-primary)',
-        secondary: 'var(--colors-secondary)',
-        tertiary: 'var(--colors-tertiary)',
-        quaternary: 'var(--colors-quaternary)',
+        dark: 'rgb(var(--colors-dark))',
+        'dark-bg': 'rgb(var(--colors-dark-bg))',
+        light: 'rgb(var(--colors-light))',
+        'light-bg': 'rgb(var(--colors-light-bg))',
+        primary: 'rgb(var(--colors-primary))',
+        secondary: 'rgb(var(--colors-secondary))',
+        tertiary: 'rgba(var(--colors-tertiary), 1)',
+        'tertiary-60': 'rgba(var(--colors-tertiary), 0.6)',
+        'tertiary-20': 'rgba(var(--colors-tertiary), 0.2)',
+        quaternary: 'rgb(var(--colors-quaternary))',
+      },
+      backgroundImage: {
+        'bg-img-test': "url('/public//aiony-haust-3TLl_97HNJo-unsplash.jpg')",
       },
     },
     plugins: [],

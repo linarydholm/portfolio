@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import { Header } from './components/Header';
 import { Banner } from './components/Banner';
-import { Footer } from './components/Footer';
+// import { Footer } from './components/Footer';
 import About from './components/About';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  const myClass = `bg-light text-dark ${inter.className} overflow-y-scroll`;
+  const myClass = `bg-dark-bg text-light ${inter.className} overflow-y-scroll`;
 
   return (
     <html lang="en">
@@ -24,13 +24,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
         gradient are controlled by: bg-dark, bg-gradient-to-b, from transparent, to-light 
         */}
-        <div className="text-dark bg-dark-bg bg-gradient-to-b from-transparent to-light">
+        <div className="bg-dark-bg bg-gradient-to-b from-primary to-transparent">
           <Banner />
           <Header />
           <About />
         </div>
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
