@@ -1,24 +1,20 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
 import { Header } from './components/Header';
 import { Banner } from './components/Banner';
 // import { Footer } from './components/Footer';
 import About from './components/About';
-
-const inter = Inter({ subsets: ['latin'] });
+import { redHatRegular } from '@/fonts';
 
 export const metadata: Metadata = {
-  title: 'Lina Rydholm',
+  title: 'Local for now',
   description: 'Frontend developer in Stockholm',
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  const myClass = `bg-dark-bg text-light ${inter.className} overflow-y-scroll`;
-
   return (
-    <html lang="en">
-      <body className={myClass}>
+    <html lang="en" className={redHatRegular.className}>
+      <body className="bg-dark-bg text-light overflow-y-scroll">
         {/* 
         text-dark: sets text color on Banner, Header and About
 

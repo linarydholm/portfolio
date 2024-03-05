@@ -50,6 +50,9 @@ const config: Config = {
       ],
     },
     extend: {
+      fontFamily: {
+        redHat: ['var(--font-redHat)'],
+      },
       colors: {
         dark: 'rgb(var(--colors-dark))',
         'dark-bg': 'rgb(var(--colors-dark-bg))',
