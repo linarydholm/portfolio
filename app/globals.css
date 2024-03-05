@@ -2,21 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer base {
+  :root {
+    --colors-dark: 37 37 37;
+    --colors-light: 240 243 255;
 
+    --colors-dark-bg: 7 15 43;
+    --colors-light-bg: 240 243 255;
+
+    --colors-primary: 83 92 145;
+    --colors-secondary: 27 26 85;
+    --colors-tertiary: 21, 245, 186;
+    --colors-quaternary: 146 144 195;
+
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+  }
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-end-rgb: 255, 255, 255;
   }
 }
 
-body {
+.test {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
     rgb(var(--background-start-rgb));
