@@ -1,3 +1,4 @@
+import { redHatRegular } from '@/fonts';
 import { person } from '../data/person';
 
 export default function Education() {
@@ -9,7 +10,7 @@ export default function Education() {
         {education.map((school, index) => {
           return (
             <div key={index}>
-              <p className="text-xxs pb-1">
+              <p className={`${redHatRegular.className} text-xxs pb-1`}>
                 {school.school}, {school.period}
               </p>
               <p className="text-xs pb-6">{school.program}</p>

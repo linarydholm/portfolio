@@ -1,1 +1,1 @@
-export const menuLinks = ['Skills', 'Education', 'Experience'];
+export const menuLinks = ['Skills', 'Education', 'Experiences'];

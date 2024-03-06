@@ -22,10 +22,15 @@ export const person = {
   },
   experience: [
     {
-      jobTitle: 'Logistics',
-      period: '2022-2023',
-      jobDescription: "Order pick and pack at Skincity's main warehouse.",
+      jobTitle: 'Frontend Developer',
+      period: '2024',
+      jobDescription: 'Internship as a frontend developer at NoA Ignite.',
     },
+    // {
+    //   jobTitle: 'Logistics',
+    //   period: '2022-2023',
+    //   jobDescription: "Order pick and pack at Skincity's main warehouse.",
+    // },
     {
       jobTitle: 'Financial Assistant',
       period: '2020-2022',
@@ -46,7 +51,7 @@ export const person = {
     {
       jobTitle: 'Shift Manager',
       period: '2014-2019',
-      jobDescription: 'Shift manager at Max burgers with shift responsibility.',
+      jobDescription: 'Shift manager at Max burgers.',
     },
   ],
   education: [

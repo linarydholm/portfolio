@@ -1,3 +1,4 @@
+import { redHatRegular } from '@/fonts';
 import { person } from '../data/person';
 
 export default function Experience() {
@@ -9,7 +10,7 @@ export default function Experience() {
         {experience.map((job, index) => {
           return (
             <div key={index}>
-              <p className="text-xxs pb-1">
+              <p className={`${redHatRegular.className} text-xxs pb-1`}>
                 {job.jobTitle}, {job.period}
               </p>
               <p className="text-xs pb-6">{job.jobDescription}</p>

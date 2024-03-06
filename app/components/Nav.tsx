@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Skills from './Skills';
 import Education from './Education';
 import Experience from './Experience';
+import { redHatRegular } from '@/fonts';
 
 export default function Nav() {
   const [activeLink, setActiveLink] = useState('Skills');
@@ -14,7 +15,7 @@ export default function Nav() {
     case 'Education':
       component = <Education />;
       break;
-    case 'Experience':
+    case 'Experiences':
       component = <Experience />;
       break;
     case 'Skills':
@@ -32,7 +33,7 @@ export default function Nav() {
               return (
                 <div className="relative group overflow-hidden" key={headerLink}>
                   <button
-                    className={`flex flex-col py-[6px] text-s`}
+                    className={`${redHatRegular.className} flex flex-col py-[6px] text-s`}
                     key={`headerLink${headerLink}`}
                     onClick={() => setActiveLink(headerLink)}
                   >

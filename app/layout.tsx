@@ -4,7 +4,7 @@ import { Header } from './components/Header';
 import { Banner } from './components/Banner';
 // import { Footer } from './components/Footer';
 import About from './components/About';
-import { redHatRegular } from '@/fonts';
+import { montserratLight } from '@/fonts';
 
 export const metadata: Metadata = {
   title: 'Local for now',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={redHatRegular.className}>
+    <html lang="en" className={montserratLight.className}>
       <body className="bg-dark-bg text-light overflow-y-scroll">
         {/* 
         text-dark: sets text color on Banner, Header and About

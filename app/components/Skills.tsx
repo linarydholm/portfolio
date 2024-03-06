@@ -1,3 +1,4 @@
+import { redHatRegular } from '@/fonts';
 import { person } from '../data/person';
 import { capitalizeFirstLetter } from '../utils/capitalizeFirstLetter';
 
@@ -14,7 +15,9 @@ export default function Skills() {
         {Object.entries(skills).map(([keyName, categoryArr]) => {
           return (
             <div className="pb-6" key={keyName}>
-              <p className="text-xxs pb-1">{capitalizeFirstLetter(keyName)}</p>
+              <p className={`${redHatRegular.className} text-xxs pb-1`}>
+                {capitalizeFirstLetter(keyName)}
+              </p>
               <p className="text-xs">{joinArrWithComma(categoryArr)}</p>
             </div>
           );

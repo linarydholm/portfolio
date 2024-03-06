@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { person } from '../data/person';
+import { redHatRegular } from '@/styles/fonts/fonts';
 
 export function Header() {
   const { personal } = person;
@@ -13,7 +14,9 @@ export function Header() {
             {personal.firstName} {personal.lastName}
           </p>
 
-          <p className="text-l pl-3 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          <p
+            className={`${redHatRegular.className} text-l pl-3 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]`}
+          >
             {personal.jobTitle}
           </p>
         </div>

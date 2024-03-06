@@ -1,5 +1,5 @@
 import Nav from './components/Nav';
-import { Work } from './components/Work';
+import { Portfolio } from './components/Portfolio';
 
 export default function IndexPage() {
   return (
@@ -7,7 +7,7 @@ export default function IndexPage() {
       <section>
         <Nav />
       </section>
-      <Work />
+      <Portfolio />
     </>
   );
 }
